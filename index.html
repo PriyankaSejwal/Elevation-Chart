@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elevation Chart</title>
+    <script src="https://www.google.com/jsapi"></script>
+  </head>
+  <style>
+    input {
+      border: none;
+    }
+    #map {
+      width: 700px;
+      height: 400px;
+    }
+    #elevation_chart{
+      width:600px,;
+      height:400px,
+    }
+  </style>
+  <body><div class="table"><table border="1">
+    <tr>
+      <td>
+        <img src="image/marker.png" alt="Enter co-ordinates" width="30px" />
+      </td>
+      <td><input type="text" class="latlng" /></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="image/marker.png" alt="Enter co-ordinates" width="30px" />
+      </td>
+      <td><input type="text" class="latlng" onchange="latlongcreate()"/></td>
+    </tr></div>
+    
+      <div id="map"></div>
+      <div id="elevation_chart"></div>
+      <script src="elevation chart.js"></script>
+      <!-- <script src="https://maps.google.com/maps/api/js?sensor=false&callback=initMap"></script> -->
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFf4mpz_yyO4VwiDBxITLVQjp8Zr_VlHc&callback=initMap"
+        defer
+      ></script>
+    </table>
+  </body>
+</html>
